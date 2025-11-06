@@ -109,11 +109,6 @@ Detected: person, car, dog
 
 <hr>
 
-<h2>📸 Demo</h2>
-<p>Add your screenshots or demo video below:</p>
-<img src="https://via.placeholder.com/600x350?text=Demo+Screenshot" alt="Demo Output" style="border-radius:10px; box-shadow:0 0 8px rgba(0,0,0,0.2);"/>
-
-<hr>
 
 <h2>💬 Contact</h2>
 <p><b>Author:</b> Gunda Srija<br>
