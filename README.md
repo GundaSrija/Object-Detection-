@@ -30,6 +30,7 @@ pip install -r requirements.txt
 If you’re using YOLOv5 directly:
 pip install torch torchvision torchaudio
 pip install opencv-python
+
 🧠**How to Run**
 -->To perform detection using a webcam:
 python detect.py --weights yolov5s.pt --source 0
@@ -37,6 +38,7 @@ python detect.py --weights yolov5s.pt --source 0
 python detect.py --weights yolov5s.pt --source path/to/image.jpg
 -->To train the model on a custom dataset:
 python train.py --data coco.yaml --cfg yolov5s.yaml --weights '' --epochs 300
+
 
 
 **📂 Project Structure:**
@@ -49,23 +51,29 @@ Object-Detection-/
 ├── train.py             # Script for model training
 ├── requirements.txt     # Python dependencies
 └── README.md            # Project documentation
+
 **🧩 Example Output:**
 Detected person, car, and dog with bounding boxes
 Saved results to runs/detect/exp
+
 **🌟 Results**
 Achieved accurate detection on COCO dataset
 Real-time detection at ~30 FPS on standard GPU
 Successfully detects 80+ object classes
+
 **📸 Demo**
 If you have a demo video or image, add a link or screenshot here
+
 **💡 Future Enhancements:**
 Improve accuracy using custom dataset
 Add support for YOLOv8 or other models
 Deploy the model using Streamlit or Flask
+
 **⭐ If you found this project helpful, give it a star!:
 **
 
 ---
+
 
 Would you like me to customize this README with:
 - your **LinkedIn link**,  
