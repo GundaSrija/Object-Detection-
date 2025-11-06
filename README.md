@@ -1,88 +1,124 @@
-# 🧠 Object Detection using YOLOv5
+<h1>🧠 Object Detection using YOLOv5</h1>
 
-This project demonstrates **real-time object detection** using the YOLOv5 model.  
-It can detect multiple objects in images, videos, or live webcam streams with high accuracy.
+<p>This project demonstrates <b>real-time object detection</b> using the YOLOv5 model.  
+It can detect multiple objects in images, videos, or live webcam streams with high accuracy.</p>
 
----
+<hr>
 
-## 🚀 Features
-- Real-time object detection using YOLOv5  
-- Supports webcam, image, and video input  
-- Custom dataset training capability  
-- Displays bounding boxes and labels for detected objects  
-- Built on PyTorch and OpenCV  
+<h2>🚀 Features</h2>
+<ul>
+  <li>Real-time object detection using YOLOv5</li>
+  <li>Supports webcam, image, and video input</li>
+  <li>Custom dataset training capability</li>
+  <li>Displays bounding boxes and labels for detected objects</li>
+  <li>Built on PyTorch and OpenCV</li>
+</ul>
 
----
+<hr>
 
-## 🧩 Technologies Used
-- **Python**
-- **PyTorch**
-- **YOLOv5 Framework**
-- **OpenCV**
-- **NumPy**
-- **Matplotlib**
+<h2>🧩 Technologies Used</h2>
+<ul>
+  <li><b>Python</b></li>
+  <li><b>PyTorch</b></li>
+  <li><b>YOLOv5 Framework</b></li>
+  <li><b>OpenCV</b></li>
+  <li><b>NumPy</b></li>
+  <li><b>Matplotlib</b></li>
+</ul>
 
----
+<hr>
 
-## ⚙️ Installation
-Install the dependencies:
-pip install -r requirements.txt
-If you’re using YOLOv5 directly:
-pip install torch torchvision torchaudio
-pip install opencv-python
-
-🧠**How to Run**
--->To perform detection using a webcam:
-python detect.py --weights yolov5s.pt --source 0
--->To detect objects in an image:
-python detect.py --weights yolov5s.pt --source path/to/image.jpg
--->To train the model on a custom dataset:
-python train.py --data coco.yaml --cfg yolov5s.yaml --weights '' --epochs 300
-
-
-
-**📂 Project Structure:**
-Object-Detection-/
-│
-├── data/                # Dataset configuration
-├── models/              # YOLOv5 model architecture
-├── runs/                # Output results (detections, logs, etc.)
-├── detect.py            # Script for object detection
-├── train.py             # Script for model training
-├── requirements.txt     # Python dependencies
-└── README.md            # Project documentation
-
-**🧩 Example Output:**
-Detected person, car, and dog with bounding boxes
-Saved results to runs/detect/exp
-
-**🌟 Results**
-Achieved accurate detection on COCO dataset
-Real-time detection at ~30 FPS on standard GPU
-Successfully detects 80+ object classes
-
-**📸 Demo**
-If you have a demo video or image, add a link or screenshot here
-
-**💡 Future Enhancements:**
-Improve accuracy using custom dataset
-Add support for YOLOv8 or other models
-Deploy the model using Streamlit or Flask
-
-**⭐ If you found this project helpful, give it a star!:
-**
-
----
-
-
-Would you like me to customize this README with:
-- your **LinkedIn link**,  
-- **project demo image/video link**, and  
-- a **short description paragraph (like a summary for recruiters)?**
-
-I can make it look professional and formatted perfectly for your GitHub profile.
-
-```bash
-
-git clone https://github.com/GundaSrija/Object-Detection-.git
+<h2>⚙️ Installation</h2>
+<pre><code>git clone https://github.com/GundaSrija/Object-Detection-.git
 cd Object-Detection-
+</code></pre>
+
+<h3>1️⃣ Create a Virtual Environment (optional)</h3>
+<pre><code>python -m venv yolov5_env
+yolov5_env\Scripts\activate      # On Windows
+source yolov5_env/bin/activate  # On Mac/Linux
+</code></pre>
+
+<h3>2️⃣ Install Dependencies</h3>
+<pre><code>pip install -r requirements.txt
+</code></pre>
+<p>If <code>requirements.txt</code> is missing:</p>
+<pre><code>pip install torch torchvision torchaudio
+pip install opencv-python numpy matplotlib tqdm
+</code></pre>
+
+<h3>3️⃣ Download YOLOv5 Pre-trained Weights</h3>
+<p>Download <code>yolov5s.pt</code> from 
+<a href="https://github.com/ultralytics/yolov5/releases" target="_blank">YOLOv5 Releases</a> 
+and place it in your project directory.</p>
+
+<hr>
+
+<h2>🎯 Usage</h2>
+
+<h3>▶️ Run Object Detection on Webcam</h3>
+<pre><code>python detect.py --weights yolov5s.pt --source 0
+</code></pre>
+
+<h3>🖼️ Detect Objects in an Image</h3>
+<pre><code>python detect.py --weights yolov5s.pt --source path/to/image.jpg
+</code></pre>
+
+<h3>🎥 Detect Objects in a Video</h3>
+<pre><code>python detect.py --weights yolov5s.pt --source path/to/video.mp4
+</code></pre>
+
+<h3>🧠 Train the Model on Custom Dataset</h3>
+<pre><code>python train.py --data data/custom.yaml --cfg yolov5s.yaml --weights '' --epochs 100
+</code></pre>
+
+<hr>
+
+<h2>📁 Project Structure</h2>
+<pre><code>Object-Detection-/
+│
+├── data/                # Dataset and config files
+├── models/              # Model architecture
+├── runs/                # Output detections and logs
+├── utils/               # Helper functions and modules
+├── detect.py            # Detection script
+├── train.py             # Training script
+├── requirements.txt     # Dependencies
+└── README.md            # Documentation
+</code></pre>
+
+<hr>
+
+<h2>📊 Example Output</h2>
+<pre><code>Detecting objects...
+Results saved to runs/detect/exp
+Detected: person, car, dog
+</code></pre>
+
+<p>Output files will be stored in <code>runs/detect/exp/</code></p>
+
+<hr>
+
+<h2>🔮 Future Enhancements</h2>
+<ul>
+  <li>Integrate YOLOv8 for improved performance</li>
+  <li>Deploy with Streamlit or Flask for web interface</li>
+  <li>Optimize with TensorRT for faster inference</li>
+  <li>Add dashboard for real-time monitoring</li>
+</ul>
+
+<hr>
+
+<h2>📸 Demo</h2>
+<p>Add your screenshots or demo video below:</p>
+<img src="https://via.placeholder.com/600x350?text=Demo+Screenshot" alt="Demo Output" style="border-radius:10px; box-shadow:0 0 8px rgba(0,0,0,0.2);"/>
+
+<hr>
+
+<h2>💬 Contact</h2>
+<p><b>Author:</b> Gunda Srija<br>
+<b>GitHub:</b> <a href="https://github.com/GundaSrija" target="_blank">@GundaSrija</a><br>
+<b>LinkedIn:</b> <a href="https://linkedin.com/in/your-link" target="_blank">Add your LinkedIn profile link</a>
+</p>
+
+<p>⭐ If you find this project useful, don’t forget to give it a star!</p>
