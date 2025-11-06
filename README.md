@@ -113,7 +113,7 @@ Detected: person, car, dog
 <h2>💬 Contact</h2>
 <p><b>Author:</b> Gunda Srija<br>
 <b>GitHub:</b> <a href="https://github.com/GundaSrija" target="_blank">@GundaSrija</a><br>
-<b>LinkedIn:</b> <a href="https://linkedin.com/in/your-link" target="_blank">www.linkedin.com/in/srija-gunda-34022a305</a>
+<b>LinkedIn:</b> <a href="https://linkedin.com/in/your-link" target="_blank">https://www.linkedin.com/in/srijagunda/</a>
 </p>
 
 <p>⭐ If you find this project useful, don’t forget to give it a star!</p>
